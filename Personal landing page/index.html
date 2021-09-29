@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+
+    .message-box {
+      height: 100px
+    }
+
+    .nav {
+      background-color: black;
+      color: white;
+    }
+
+    a.nav-link {
+      color: white;
+    }
+
+    a.nav-link:hover {
+      background-color: white;
+      color: black;
+    }
+
+
+    h2 {
+      text-align: center;
+    }
+
+    .card {
+      margin-top: 50px;
+    }
+
+    .card-img-top {
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+
+    .card-img-top:hover {
+      filter: grayscale(0%);
+    }
+
+
+    section {
+      height: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+
+    form {
+      border: 1px solid black;
+      margin: auto;
+      width: 70%;
+    }
+
+    .submit {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <title>Adam Kollat</title>
+</head>
+
+<body>
+  <header>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link mktoText" href="#about">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mktoText" href="#things_i_do">Things I Do</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mktoText" href="#contact">Contact Me</a>
+      </li>
+    </ul>
+    <img class="mktoImg" src="images/color_hero.png" alt="hero image" style="max-width: 100%;">
+  </header>
+
+
+  <!-- <about section> -->
+  <section id="about">
+
+    <h2 class="mktoText">About Me</h2>
+    <br>
+    <br>
+    <div class="container mktoText">
+      <p>I am a self-taught Web Developer and I have recently been appointed to the role of Martech Specialist at
+        Clevertouch Marketing. This is my first position in the tech industry, prior to this I had been working in
+        restaurant management for over eight years. I live in Stubbington – a quite village by the sea near Fareham –
+        with my wife and our son. We are a tight family and do everything together. We enjoy travelling, playing
+        boardgames and watching movies. I try to keep fit by lifting weights and running (occasionally) and I have also
+        started practicing Brazilian Jiu Jitsu in early 2021. I seek new challenges in life because I believe it they
+        provide opportunities to better myself constantly.</p>
+    </div>
+  </section>
+
+  <!-- Card deck -->
+  <section id="things_i_do">
+
+    <h2 class="mktoText">Things I Do</h2>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top mktoImg" src="images/coding_card_top.jpg" alt="coding">
+          <div class="card-body">
+            <h5 class="card-title mktoText">Coding</h5>
+            <p class="card-text mktoText">I wrote my first line of code during the first Covid lockdown and I was hooked
+              immediately. Fast forward 18 months and this hobby turned into a new career.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top mktoImg" src="images/fitness_card_cap.jpg" alt="fitness">
+          <div class="card-body">
+            <h5 class="card-title mktoText">Fitness</h5>
+            <p class="card-text mktoText">Weightlifting has been an important part of my life for over five years now. I
+              have a
+              fully equipeed home gym and work out regularly. </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card">
+          <img class="card-img-top mktoImg" src="images/travel_image_cap.jpg" alt="travel">
+          <div class="card-body">
+            <h5 class="card-title mktoText">Travel</h5>
+            <p class="card-text mktoText">I love to travel around the globe with my family. We regularly arrange weekend
+              trips to
+              European locations carrying only a backpackful of items.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top mktoImg" src="images/music_imagecap.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title mktoText">Music</h5>
+            <p class="card-text mktoText">I am a lifelong fan of heavy metal music. My all time favourite band is
+              Metallica. I
+              try to see them live any time they're in the UK. I also play the guitar although I'm not quite a rock
+              legend yet.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top mktoImg" src="images/food_image_cap.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title mktoText">Food</h5>
+            <p class="card-text mktoText">Throughout my years in hospitality I've developed a deep passion for food. I
+              enjoy
+              cooking and I love to eat. Whenever I visit a new place I'm always on the lookout for local street food.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card">
+          <img class="card-img-top mktoImg" src="images/random_imagecap.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title mktoText">Random Facts</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item mktoText">I once jumped out of an airplane at 10000ft.</li>
+              <li class="list-group-item mktoText">The best dessert I've ever had was breaded porkbelly with salted
+                caramel ice
+                cream.</li>
+              <li class="list-group-item mktoText">I am a fully qualified Personal Trainer.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+
+    <h2 class="mktoText">Contact me</h2>
+
+    <div class="container form-container">
+      <form class="myForm mktoForm">
+        <div class="form-group">
+          <label>Name</label>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" class="form-control" placeholder="Enter email">
+        </div>
+
+        <div class="form-group message-box">
+          <label>Message</label>
+          <input type="text" class="form-control" placeholder="Enter Your message here">
+        </div>
+        <button type="submit" class="btn submit btn-primary">Submit</button>
+      </form>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
