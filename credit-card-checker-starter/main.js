@@ -42,7 +42,11 @@ const validateCred = array => {
    const sum = processed.reduce(function(accumulator, n){
      return accumulator + n;
    });
-   return sum;
+   if (sum % 10 === 0){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
