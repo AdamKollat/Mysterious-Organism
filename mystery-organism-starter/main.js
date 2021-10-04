@@ -28,8 +28,8 @@ const pAequorFactory = (number, dnaArray) => {
   },
   compareDNA(pAquor) {
   let sameCount = 0;
-  for (let k = 0, k < this.dna.length, k++) {
-    if(this.dna[k] === pAquor.dna[k]){
+  for (let a = 0; a < this.dna.length; a++) {
+    if(this.dna[a] === pAquor.dna[a]){
       sameCount++;
     }
   }
@@ -37,28 +37,31 @@ const pAequorFactory = (number, dnaArray) => {
   return percentage;
   },
   willLikelySurvive() {
-   const cAndgCount = 0;
-   for (let j = 0, j < this.dna.length, j++){
+   let cAndgCount = 0;
+   for (let j = 0; j < this.dna.length; j++){
      if (this.dna[j] === 'C' || this.dna[j]=== 'D'){
-       cAdngCount++;
+       cAndgCount++;
      }
    }
-    const survivalRate = (cAndgCount / this.dna.length) * 100;
-    if (survivalRate > 60) {
-      return true;
-    } else return false;
-  },
+    const survivalRate = ((cAndgCount / this.dna.length) * 100) >= 60;
+   },
   }
 };
+
+const buildSampleInstances = () =>{
+let sampleInstances = [];
+let sampleIndex = 1;
+while (sampleInstances.length < 30) {
+  let currentInstance = pAequorFactory(sampleIndex, mockUpStrand());
+  if (currentInstance.willLikelySurvive()){
+    sampleInstances.push(currentInstance);
+    sampleIndex++;
+  }
+}
+return sampleInstances;
+};
+
+buildSampleInstances();
  
-
-
-
-
-
-
-
-
-
 
 
